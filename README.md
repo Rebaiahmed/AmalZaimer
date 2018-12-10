@@ -9,17 +9,19 @@ Get memories notficiations daily , Map tracking to come back to home , if it'was
 
 ## Demo 
 
+[Demo](https://www.youtube.com/watch?v=abluc9FK8KE "Demo")
 [![Smart Assistant for Alzheimer patients](http://i3.ytimg.com/vi/abluc9FK8KE/hqdefault.jpg)](https://www.youtube.com/watch?v=abluc9FK8KE "")
 
 
 
 ## Built With
 
-* [DialogFlow](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Nodejs](https://maven.apache.org/) - Dependency Management
-* [Reactjs](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-* [socket.io](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-* [twilio](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [DialogFlow](https://dialogflow.com/) - API used fot the chatbot training 
+* [Nodejs](https://nodejs.org/en/) - 
+* [Reactjs](https://reactjs.org/) - Front-end libray 
+* [socket.io](https://socket.io/) - Real time communication
+* [twilio](https://www.twilio.com/docs/usage/api) - SMS API
+* [firebase](https://firebase.google.com) - Real time databse
 
  
 
