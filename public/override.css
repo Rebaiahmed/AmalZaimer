@@ -1,0 +1,240 @@
+/* 1. Global styles for the entire project */
+* {font-family: 'Roboto', sans-serif;}
+body {position: relative;}
+.load {width: 100%; height: 100%; position: fixed; top: 0; left: 0; background-image: url(../images/load.png), radial-gradient(ellipse at center, #68b4df 0%, #194173 100%); background-repeat: no-repeat; background-position: center center; z-index: 1031;}
+a, a:hover, a:active, a:focus {text-decoration: none; outline: none;}
+input:focus, textarea:focus {outline: none;}
+p, h1, h2, h3, h4, h5, h6, ul {margin: 0;}
+input[type=text], textarea {width: 100%; border-radius: 4px; border: 1px solid #d5dae0; padding: 10px 15px; margin: 0 0 30px 0;}
+textarea {height: 190px; resize: none;}
+.button {background-color: #2ec579; color: #fff; text-transform: uppercase; font-size: 1.14em; font-weight: 700; box-shadow: 2.5px 4.33px 5px 0px rgba(0, 0, 1, 0.07); text-align: center;}
+.button:hover {color: #fff; text-decoration: none;}
+.button:active, .button:focus {color: #fff; text-decoration: none; outline: none; box-shadow: inset 0 2px 1px rgba(0, 0, 0, .2);}
+.large {padding: 17px 50px; border-radius: 30px;}
+.loading {background: url(../images/loader.gif) #d7d7d7; color: #767676; cursor: not-allowed;}
+.loading:hover, .loading:focus {text-decoration: none; color: #767676}
+.form-field {position: relative;}
+.form-field .fa {position: absolute; top: 14px; right: 14px; z-index: 2;}
+.form-field.error input, #contacts .form-field.error textarea {border-color: #d14242;}
+.form-field.success input, #contacts .form-field.success textarea {border-color: #3c763d;}
+.form-field.error i {color: #d14242;}
+.form-field.success i {color: #3c763d;}
+.validate-message {display: none; text-align: left;}
+.alert em {font-style: normal;}
+small.title {text-align: center; font-size: 1.2em; display: block;}
+small.title + h2 {text-align: center; font-size: 2.8em; margin: 0 0 75px 0; font-weight: 300;}
+small.dark {color: #7f929e;}
+small.dark + h2 {color: #3c4448;}
+small.light {color: #daebf8;}
+small.light + h2 {color: #fff;} 
+
+
+/* 2. Bootstrap override */
+.navbar-default .navbar-toggle .icon-bar {background-color: #fff;}
+.navbar-default .navbar-toggle {border: none;}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color: transparent;}
+.modal-header {padding: 15px 15px 0; border-bottom: none;}
+.modal-header .close {margin-top: -5px; font-size: 40px; font-weight: 300;}
+.img-responsive {margin: auto;}
+.carousel-inner > .item {display: block; padding-bottom: 5px;}
+
+/* 3. Global style for each sections */
+#welcome {background: url(../images/welcome_bg.png) no-repeat center center, url(../images/bg.png) repeat-x top;}
+#services {margin: 125px 0; border-bottom: 1px solid #e9edf1;}
+#starting {border-bottom: 1px solid #e9edf1; margin: 0 0 125px 0;}
+#works, #team {padding: 0 0 125px;}
+#directions {background: linear-gradient(to top, #68b4df, #194173); padding: 125px 0;}
+#cases {padding: 125px 0; background: url(../images/cases_bg.png) repeat-x top;}
+#price {padding: 125px 0; background: url(../images/price_bg.png) no-repeat top, url(../images/price_bg_gradient.png) repeat-x top; border-bottom: 1px solid #e9edf1;}
+#contacts {margin: 125px 0;}
+
+/* 4. Styles for header */
+header {border: none !important; border-radius: 0 !important; transition: background 1s ease; background: transparent;}
+header li > a {color: #765fad !important;}
+header li a:hover {color: #fff !important;}
+header li.active a:hover {}
+header li.active a {color: #fff !important; background: transparent !important;}
+
+/* 5. Styles for Intro section */
+#welcome .intro {text-align: center; padding: 250px 0 0 0;}
+#welcome .intro small {color: #c3dbe9; font-size: 1.5em;}
+#welcome .intro h1 {color: #fff; font-size: 6em; font-weight: 700; line-height: 90px;}
+#welcome .intro a.intro-button {display: block; width: 100%; border-radius: 8px; border: 2px solid #8eb7d4; color: #fff; font-weight: 700; text-transform: uppercase; padding: 10px 0; background:  #71a4c9; margin: 42px 0; transition: all .3s ease;}
+#welcome .intro a.intro-button:hover {background: #2ec579; box-shadow: 2.5px 4.33px 5px 0px rgba(0, 0, 1, 0.07); border: 2px solid #2ec579;}
+
+/* 6. Styles for Review block */
+#welcome .review {text-align: left;}
+#welcome .review-user {overflow: hidden; margin: 40px 30px 0 0; text-align: center; float: left;}
+#welcome .review-user img {width: 70px; height: 70px; border-radius: 50%; border: 3px solid #fff; }
+#welcome .review-meta {color: #fff; font-size: 1.14em; margin: 0 0 30px 0;}
+#welcome .review-meta span  {color: #c3dbe9; text-align: right; font-size: 0.7em; float: right;}
+#welcome .review-text {margin: 0 0 0 106px; background: #fff; border-radius: 5px; padding: 20px; color: #6b767d; font-size: 1.14em; box-shadow: 2.5px 4.33px 5px 0px rgba(0, 0, 1, 0.07); position: relative; text-align: left;}
+#welcome .review-text:after {content: ''; position: absolute; width: 0; left: -5px; top: 25px; height: 0; border-top: 5px solid transparent; border-right: 5px solid #fff; border-bottom: 5px solid transparent;}
+#welcome .review-text:before {content: ''; position: absolute; width: 90%; left: 50%; top: -10px; height: 10px; background: #80badd; margin: 0 -45%; border-top-left-radius: 5px; border-top-right-radius: 5px;}
+#welcome .review-text p {min-height: 90px;}
+#welcome .review-link {margin: 30px 0 0 0;}
+
+/* 7. Styles for Services section */
+.service, .modal-body {text-align: center;}
+.service img {margin: 0 0 35px 0;}
+.service h2 {color: #3c4448; margin: 0 0 25px 0; font-size: 1.28em; font-weight: normal;}
+.service > span {display: block; color: #6b767d; margin: 0 0 30px 0; font-size: 1.14em;}
+.service > a {width: 100%; display: block; margin: 0 0 100px 0; opacity: 0; padding: 7px 0; border-radius: 16.5px; font-weight: 700;}
+.service:hover a {opacity: 1;}
+.modal-body .modal-title {font-size: 2.5em; font-weight: 300; color: #3c4448; margin: 40px 0;}
+.modal-body h4 + p {font-size: 1.14em; color: #6b767d; border-bottom: 1px solid #e9edf1; padding: 0 0 60px 0; margin: 0 0 60px 0;}
+.modal-body h5 {color: #3c4448; font-size: 1.71em; font-weight: normal; margin: 50px 0;}
+.modal-body ul.list {list-style-image: url(../images/list.png);}
+.modal-body ul.list li {text-align: left; color: #3c4448; font-size: 1.14em; padding: 0 0 40px 20px;}
+.modal-body a {display: inline-block; margin: 0 0 70px 0;}
+
+/* 8. Styles for Work section */
+.work {text-align: center; margin: 0 0 30px 0;}
+.work h3 {color: #3c4448; font-size: 1.28em; margin: 35px 0 30px; font-weight: normal;}
+.work p {color: #6b767d; font-size: 1.14em;}
+
+/* 9. Styles for Directions section */
+.direction {border-bottom: 1px solid rgba(255, 255, 255, .2); overflow: hidden; padding: 0 0 100px 0; margin: 0 0 100px 0; width: 100%;}
+.direction h3 {color: #fff; font-size: 2.14em; margin: 0 0 50px 0; font-weight: 300;}
+.direction p {color: #daebf8; font-size: 1.14em;}
+.direction img {margin: 0 auto 30px;}
+.direction.middle img {margin: 30px auto 0;}
+.direction.no-br {border-bottom: none; padding: 0; margin: 0;}
+
+/* 10. Styles for Cases section */
+.case {border-radius: 10px;  box-shadow: 2.5px 4.33px 5px 0px rgba(0, 0, 1, 0.07); position: relative; background: #fff; margin: 0 0 100px 0;}
+.case .case-image {height: 235px; overflow: hidden; border-top-left-radius: 10px; border-top-right-radius: 10px;}
+.case .case-network {position: absolute; top: 200px; left: 50%; margin: 0 0 0 -35px;}
+.case .case-network img {width: 70px; height: 70px;}
+.case h3 {color: #464f54; font-weight: 300; font-size: 1.71em; margin: 65px 0 10px 0; text-align: center;}
+.case .case-link {text-align: center; margin: 0 0 45px 0;}
+.case a {color: #7f929e; font-size: 1.14em;}
+.case .before, .case .after {text-align: center; margin: 0 0 60px 0;}
+.case .before h4, .case .after h4 {color: #7f929e; text-transform: uppercase; display: inline-block; background: #edf3fa; border-radius: 15px; padding: 5px 15px; margin: 0 0 40px 0;}
+.case .digits {font-size: 1.24em; text-align: center;}
+.case .before .digits {color: #464f54;}
+.case .after .digits {color: #2ec579;}
+.case .labels {color: #7f929e; margin: 0 0 20px 0;}
+
+/* 11. Styles for Starting section */
+.stage {text-align: center; margin: 0 0 60px 0;}
+.stage .bage {border-radius: 50%; width: 30px; height: 30px; color: #fff; text-align: center; line-height: 30px; background: #2ec579; margin: 0 auto 25px;}
+.stage img {margin: 0 0 35px 0;}
+.stage p {color: #3c4448; font-size: 1.14em;}
+#starting a {display: inline-block; margin: 50px auto;}
+#starting a i {margin: 0 10px 0 0;}
+
+/* 12. Styles for Team section */
+.member {text-align: center; margin: 0 0 50px 0;}
+.member img {margin: 0 0 35px 0; border-radius: 50%; max-width: 100%;}
+.member h3 {margin: 0 0 25px 0; color: #464f54; font-size: 1.28em;}
+.member small {color: #6b767d; font-size: 1.14em;}
+
+/* 13. Styles for Price section */
+.complex {text-align: center; padding: 50px 20px; background: #fff; border-radius: 4px; box-shadow: 2.5px 4.33px 5px 0px rgba(0, 0, 1, 0.07); position: relative; border: 1px solid #f8f8f8; min-height: 560px; margin: 0 0 160px 0;}
+.complex small {color: #464f54; font-weight: 300; font-size: 2.14em; margin: 0 0 35px 0;}
+.complex h3 {color: #62abd7; font-weight: 300; font-size: 2.57em; margin: 0 0 70px 0;}
+.complex li {color: #464f54; font-size: 1.14em; margin: 0 0 20px 0;}
+.complex a {position: absolute; left: 50%; margin: 0 0 0 -25%; bottom: -28px; width: 50%;}
+.complex .ribbon {height: 180px; position: absolute; top: 0; left: 0; width: 180px; overflow: hidden;}
+.complex .ribbon h4 {font-size: 0.85em; color: #fff; text-transform: uppercase; background: #2ec579; line-height: 30px; text-align: left; transform: rotate(-45deg); display: block; padding: 0 0 0 40px; margin: 0 0 0 -25%;}
+h1 {text-align: center; font-weight: 300; font-size: 2.57em; color: #464f54; margin: 0 0 40px 0;}
+h1 + span {text-align: center; font-weight: 300; font-size: 1.28em; color: #464f54; display: block;}
+
+/* 14. Styles for Contacts section */
+#contacts {text-align: center;}
+#contacts a {margin: 0 0 60px 0; display: inline-block;}
+#contacts input {position: relative; z-index: 1;}
+#contacts a i {margin: 0 10px 0 0;}
+#contacts span {width: 30px; height: 32px; display: block; margin: 0 auto 40px; background:  url(../images/contacts.png) no-repeat;}
+#contacts span.phone {background-position:  0 0;}
+#contacts span.address {background-position:  -30px 0;}
+#contacts span.mail {background-position:  -60px 0;}
+#contacts h3 {color: #464f54; font-size: 1.71em; margin: 0 0 0 0;}
+#contacts p {color: #464f54; font-size: 1.14em; margin: 0 0 75px 0}
+
+/* 15. Styles for footer */
+footer {background: #edf3fa; padding: 40px 0; color: #7f929e; font-size: 1.14em;}
+footer .social a {display: inline-block; width: 40px; height: 40px; line-height: 40px; text-align: center; color: #7f929e; border-radius: 20px; transition: all .4s ease; margin: 0 0 0 5px}
+footer .social a:hover {color: #fff;}
+footer .social a:nth-child(1):hover {background: #eb4a4a;}
+footer .social a:nth-child(2):hover {background: #3aadf2;}
+footer .social a:nth-child(3):hover {background: #5586df;}
+footer .social a:nth-child(4):hover {background: #519ce2;}
+footer .social a:nth-child(5):hover {background: #759bce;}
+
+/* =========================== 16. Responsive utilites =========================== */
+/* 16.1 Phones */
+@media screen and (max-width: 768px){
+	#welcome .intro h1 {font-size: 2em; line-height: 45px;}
+	#starting .row {background: none;}
+	.service > a {opacity: 1;}
+	.direction h3 {text-align: center;}
+	.carousel-inner > .item {display: none; transition: transform 0.3s ease-in-out;}
+	.carousel-inner > .active, .carousel-inner > .next, .carousel-inner > .prev {display: block;}
+	.carousel-indicators li {border: 1px solid #6b767d; margin: 0 1px;}
+	.carousel-indicators .active {width: 10px; height: 10px; background: #6b767d;}
+	.carousel-control {top: 50%; font-size: 15px; width: 30px; height: 30px; line-height: 30px; margin: -15px 0 0 0; background: #6b767d;}
+	footer {text-align: center;}
+	footer .social a {float: none !important;}
+	#starting .button {padding: 17px 30px; font-size: 1em;}
+	#welcome .review {margin: 160px 0 0 0;}
+	#welcome .carousel-indicators {bottom: -50px;}
+	#welcome .review-user {float: none; margin: 0 auto;}
+	#welcome .review-text {margin: 0;}
+	#welcome .review-text:after {display: none;}
+	#welcome .review-meta p {text-align: center;}
+	#welcome .review-meta span {float: none; display: block; text-align: center;}
+	.complex {padding: 50px 10px;}
+	.complex h3 {font-size: 1.6em;}
+	.complex li {font-size: 1em;}
+	.complex .large {padding: 17px 0;}
+	.navbar-collapse, header {background: #2c5c8d !important;}
+	#services, #contacts {margin: 60px 0;}
+	#starting {margin: 0 0 60px 0;}
+	#works, #team {padding: 0 0 60px;}
+	#directions, #cases, #price {padding: 60px 0;}
+	#cases {background-size: 100% 85%;}
+	.case h3 {font-size: 1.5em;}
+	.case a {font-size: 0.9em;}
+	.case .before h4, .case .after h4 {font-size: 1.1em;}
+	.case .labels {font-size: 0.9em;}
+	.case .case-link {margin: 0 0 60px 0;}
+	.case .before, .case .after { margin: 0 0 40px 0;}
+
+}
+/* 16.2 Tablets */
+@media screen and (min-width: 768px){
+	#welcome .intro h1 {font-size: 4.5em; line-height: 70px;}
+	.service > a {opacity: 1;}
+	.carousel-inner > .item {display: block;}
+	#welcome .review {margin: 230px 0 0 0;}
+	#welcome .review-user {float: left; margin: 40px 30px 0 0;}
+	#welcome .review-text {margin: 0 0 0 106px;}
+	#welcome .review-text:after {display: block;}
+	#welcome .review-meta p {text-align:  left;}
+	#welcome .review-meta span {float: right; display: inline;}
+	.navbar-collapse {background: transparent; position: relative;}
+	#services, #contacts {margin: 60px 0;}
+	#starting {margin: 0 0 60px 0;}
+	#works, #team {padding: 0 0 60px;}
+	#directions, #cases, #price {padding: 60px 0; }
+	#cases {background-size: 100% 85%;}
+	.case {margin: 0 0 50px 0;}
+	.case .labels {margin: 0 0 40px 0;}
+	.direction {margin: 0 0 50px; padding: 0 0 50px;} 
+
+}
+/* 16.3 Desktop */
+@media screen and (min-width: 992px){
+	#welcome .intro h1 {font-size: 4.5em; line-height: 70px;}
+	#welcome .review {margin: 230px 0 0 0;}
+
+}
+
+/* 16.4 Large device */
+@media screen and (min-width: 1200px){
+	#welcome .intro h1 {font-size: 6em; line-height: 90px;}
+	#welcome .review {margin: 180px 0 0 0;}
+	.service > a {opacity: 0;}
+}
