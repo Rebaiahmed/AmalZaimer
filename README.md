@@ -1,5 +1,8 @@
 # AmalZaimer
 
+
+![](https://github.com/Rebaiahmed/AmalZaimer/blob/master/public/images/logo.png)
+
 Smart Assistant for Alzehimer patients to help them in their daily life (Quizz about life , family , dates , )
 Get memories notficiations daily , Map tracking to come back to home , if it'was lost , sms notification will be sent to family member , Face recognition to detect family and friends faces , Real time notificatiosn about appoinetments etc ..
 
